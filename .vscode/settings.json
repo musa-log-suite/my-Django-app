@@ -1,0 +1,23 @@
+{
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "notebookOutputEditor": true,
+        "jupyter-notebook": true,
+        "repl": true,
+        "workbench.editors.gettingStartedInput": true
+    },
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.excludeDirty": true,
+    "workbench.editor.tabSizing": "fixed",
+    "workbench.editor.wrapTabs": false,
+    "terminal.integrated.commandsToSkipShell": [
+        ""
+    ],
+    "workbench.editor.defaultBinaryEditor": "repl",
+    "workbench.editor.tabActionUnpinVisibility": false,
+    "workbench.editor.preferHistoryBasedLanguageDetection": true,
+    "workbench.editor.openSideBySideDirection": "down"
+}

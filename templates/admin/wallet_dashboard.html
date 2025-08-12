@@ -1,0 +1,127 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+{% load cache %}
+{% load json_script %}
+
+{% block title %}Wallet Dashboard | {{ site_title }}{% endblock %}
+
+{% block content %}
+  <h1>📊 Wallet Management Dashboard</h1>
+
+  <!-- 🔄 Date Range Filter -->
+  <form method="get" style="margin-bottom: 2rem;">
+    <label for="range-select"><strong>View Range:</strong></label>
+    <select id="range-select" name="range" onchange="this.form.submit()" style="margin-left: .5rem;">
+      <option value="1" {% if range_days|default:7 == 1 %}selected{% endif %}>Today</option>
+      <option value="7" {% if range_days|default:7 == 7 %}selected{% endif %}>Last 7 Days</option>
+      <option value="30" {% if range_days|default:7 == 30 %}selected{% endif %}>Last 30 Days</option>
+      <option value="custom" {% if range_days == 'custom' %}selected{% endif %}>Custom</option>
+    </select>
+
+    {% if range_days == 'custom' %}
+      <input type="date" name="start_date" value="{{ start_date }}" required style="margin-left:1rem;">
+      <input type="date" name="end_date"   value="{{ end_date }}"   required style="margin-left:.5rem;">
+      <button type="submit" style="margin-left:.5rem;">Apply</button>
+    {% endif %}
+  </form>
+
+  <!-- 🎭 Role-Based Badge -->
+  <div style="margin-bottom: 2rem;">
+    {% if is_admin %}
+      <span style="margin-right: 1rem; padding: 4px 8px; background: #ffc107; border-radius: 4px;"><strong>👑 Admin View</strong></span>
+    {% elif is_finance %}
+      <span style="margin-right: 1rem; padding: 4px 8px; background: #4caf50; color: #fff; border-radius: 4px;"><strong>💰 Finance View</strong></span>
+    {% elif is_support %}
+      <span style="margin-right: 1rem; padding: 4px 8px; background: #2196f3; color: #fff; border-radius: 4px;"><strong>🎧 Support View</strong></span>
+    {% else %}
+      <span style="padding: 4px 8px; background: #e0e0e0; border-radius: 4px;"><strong>👤 General View</strong></span>
+    {% endif %}
+  </div>
+
+  <!-- 📦 Cached Summary Cards -->
+  {% cache 300 "wallet_summary" range_days start_date end_date %}
+  <div style="display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3>Total Wallets</h3>
+      <p style="font-size: 2rem;">{{ total_wallets }}</p>
+    </div>
+    {% if is_finance or is_admin %}
+    <div style="flex: 1; min-width: 200px;">
+      <h3>Total Balance</h3>
+      <p style="font-size: 2rem;">{{ total_balance }}</p>
+    </div>
+    {% endif %}
+    <div style="flex: 1; min-width: 200px;">
+      <h3>Transactions (Last {{ range_days }} Days)</h3>
+      <p style="font-size: 2rem;">{{ range_count }} · Volume: {{ range_volume }}</p>
+    </div>
+  </div>
+  {% endcache %}
+
+  <!-- 📊 Cached Bar Chart -->
+  {% cache 300 "wallet_chart" range_days start_date end_date %}
+  <div style="margin-bottom: 4rem;">
+    <canvas id="walletChart" width="600" height="300"></canvas>
+    <div id="loadingBarChart" style="display:none; text-align:center;">Loading chart...</div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const barCtx = document.getElementById('walletChart').getContext('2d');
+      new Chart(barCtx, {
+        type: 'bar',
+        data: {
+          labels: ['Wallets', 'Txn Count', 'Txn Volume'],
+          datasets: [{
+            label: 'Metrics',
+            data: [{{ total_wallets }}, {{ range_count }}, {{ range_volume }}],
+            backgroundColor: ['#1976d2', '#43a047', '#fbc02d']
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: { beginAtZero: true }
+          }
+        }
+      });
+    </script>
+  </div>
+  {% endcache %}
+
+  <!-- 📈 Cached Time-Series Trend Chart -->
+  {% cache 300 "wallet_timeseries" range_days start_date end_date %}
+  <div style="margin-bottom: 4rem;">
+    {% if chart_data %}
+      {% json_script chart_data as "dailyDataJson" %}
+      <canvas id="trendChart" width="600" height="300"></canvas>
+      <script>
+        const dailyData = JSON.parse(document.getElementById('dailyDataJson').textContent);
+        const labels = Object.keys(dailyData);
+        const values = Object.values(dailyData);
+
+        new Chart(document.getElementById('trendChart').getContext('2d'), {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Daily Transaction Volume',
+              data: values,
+              fill: false,
+              borderColor: '#ff7043',
+              backgroundColor: '#ffab91',
+              tension: 0.3
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              y: { beginAtZero: true }
+            }
+          }
+        });
+      </script>
+    {% else %}
+      <p style="text-align:center; color: #999;">No transaction data available for this date range.</p>
+    {% endif %}
+  </div>
+  {% endcache %}
+{% endblock %}

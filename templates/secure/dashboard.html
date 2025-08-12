@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>📊 Secure Dashboard</h1>
+
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="message {{ message.tags }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <p>Hello {{ user.username }}! You have access to the secure dashboard.</p>
+
+        <div class="user-stats">
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Joined:</strong> {{ user.date_joined|date:"F j, Y" }}</p>
+            <p><strong>Is Staff:</strong> {{ user.is_staff }}</p>
+            <p><strong>Is Superuser:</strong> {{ user.is_superuser }}</p>
+        </div>
+
+        {% if user.is_staff or user.is_superuser %}
+            <div class="admin-tools">
+                <h3>🛠️ Admin Tools</h3>
+                <ul>
+                    <li><a href="{% url 'admin-dashboard' %}">Admin Dashboard</a></li>
+                    <li><a href="/admin/">Django Admin Panel</a></li>
+                </ul>
+            </div>
+        {% endif %}
+
+        <ul class="nav-links">
+            <li><a href="{% url 'secure-area' %}">Secure Area</a></li>
+            <li><a href="{% url 'users:home' %}">Home</a></li>
+            <li>
+                <form method="post" action="{% url 'users:logout' %}" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        </ul>
+
+        <div class="chart-placeholder">
+            <h3>📈 Your Activity Chart (Coming Soon)</h3>
+            <p>This section will show your wallet balance, purchases, and more.</p>
+        </div>
+    </div>
+</body>
+</html>

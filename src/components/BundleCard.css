@@ -1,0 +1,126 @@
+/* === Controls Layout === */
+.marketplace-container {
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls select,
+.controls input {
+  padding: 8px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.wallet-display {
+  margin-left: auto;
+  font-weight: bold;
+  color: #2b9348;
+}
+
+/* === Grid Layout === */
+.marketplace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* === Card Design === */
+.bundle-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.bundle-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Logo and Content === */
+.provider-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.bundle-title {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.bundle-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+.bundle-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2b9348;
+  margin-bottom: 12px;
+}
+
+/* === Purchase Button === */
+.purchase-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.purchase-button:hover {
+  background-color: #0056b3;
+}
+
+/* === Bundle Category === */
+.bundle-category {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* === No Bundles Message === */
+.no-bundles {
+  font-size: 1rem;
+  color: #999;
+  text-align: center;
+  padding: 30px;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wallet-display {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .marketplace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bundle-card {
+    padding: 20px;
+  }
+}

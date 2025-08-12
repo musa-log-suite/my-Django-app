@@ -1,0 +1,507 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 42
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4956
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 5841
+"GET / HTTP/1.1" 200 42
+"GET / HTTP/1.1" 200 42
+"GET / HTTP/1.1" 200 42
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /signup/ HTTP/1.1" 200 1135
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8426
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /signup/ HTTP/1.1" 200 1135
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8426
+"POST /signup/ HTTP/1.1" 302 0
+Unauthorized: /api/v1/users/me/
+"GET /api/v1/users/me/ HTTP/1.1" 401 9959
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /recover-password HTTP/1.1" 301 0
+Method Not Allowed: /recover-password/
+"GET /recover-password/ HTTP/1.1" 405 10395
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8679
+Watching for file changes with StatReloader
+"GET /recover-password HTTP/1.1" 301 0
+Method Not Allowed: /recover-password/
+"GET /recover-password/ HTTP/1.1" 405 10395
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8679
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 42
+Watching for file changes with StatReloader
+Method Not Allowed: /recover-password/
+"GET /recover-password/ HTTP/1.1" 405 10395
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /request-password-otp HTTP/1.1" 301 0
+Method Not Allowed: /request-password-otp/
+"GET /request-password-otp/ HTTP/1.1" 405 10441
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8679
+Method Not Allowed: /request-password-otp/
+"GET /request-password-otp/ HTTP/1.1" 405 10441
+Method Not Allowed: /request-password-otp/
+"GET /request-password-otp/ HTTP/1.1" 405 10441
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 9309
+"GET /recover-password/ HTTP/1.1" 200 1236
+"GET /recover-password/ HTTP/1.1" 200 1236
+Watching for file changes with StatReloader
+Internal Server Error: /request-password-otp/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 66, in request_password_reset
+    return render(request, "users/request_password_otp.html", {"form": form})
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/request_password_otp.html
+"GET /request-password-otp/ HTTP/1.1" 500 91632
+Watching for file changes with StatReloader
+"GET /request-password-otp/ HTTP/1.1" 200 581
+"GET /request-password-otp/ HTTP/1.1" 200 581
+"POST /request-password-otp/ HTTP/1.1" 200 614
+"POST /request-password-otp/ HTTP/1.1" 200 614
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 614
+"POST /request-password-otp/ HTTP/1.1" 200 601
+"POST /request-password-otp/ HTTP/1.1" 200 601
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 2260
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1637
+"POST /request-password-otp/ HTTP/1.1" 200 1637
+"POST /request-password-otp/ HTTP/1.1" 200 1637
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1637
+Watching for file changes with StatReloader
+"GET /request-password-otp/ HTTP/1.1" 200 1436
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 9309
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1646
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+"POST /request-password-otp/ HTTP/1.1" 200 1659
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1788
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+"POST /request-password-otp/ HTTP/1.1" 200 1801
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1915
+"POST /request-password-otp/ HTTP/1.1" 200 1902
+"POST /request-password-otp/ HTTP/1.1" 200 1902
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 200 1902
+"POST /request-password-otp/ HTTP/1.1" 200 1915
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /request-password-otp/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 92, in request_password_reset
+    return redirect("users:recover-password")
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recover-password' not found. 'recover-password' is not a valid view function or pattern name.
+"POST /request-password-otp/ HTTP/1.1" 500 96359
+Internal Server Error: /request-password-otp/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 92, in request_password_reset
+    return redirect("users:recover-password")
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recover-password' not found. 'recover-password' is not a valid view function or pattern name.
+"POST /request-password-otp/ HTTP/1.1" 500 96675
+Internal Server Error: /request-password-otp/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 92, in request_password_reset
+    return redirect("users:recover-password")
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recover-password' not found. 'recover-password' is not a valid view function or pattern name.
+"POST /request-password-otp/ HTTP/1.1" 500 96675
+Watching for file changes with StatReloader
+Internal Server Error: /request-password-otp/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 92, in request_password_reset
+    return redirect("users:recover-password")
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recover-password' not found. 'recover-password' is not a valid view function or pattern name.
+"POST /request-password-otp/ HTTP/1.1" 500 96675
+Internal Server Error: /request-password-otp/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 92, in request_password_reset
+    return redirect("users:recover-password")
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recover-password' not found. 'recover-password' is not a valid view function or pattern name.
+"POST /request-password-otp/ HTTP/1.1" 500 96675
+Internal Server Error: /request-password-otp/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 92, in request_password_reset
+    return redirect("users:recover-password")
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recover-password' not found. 'recover-password' is not a valid view function or pattern name.
+"POST /request-password-otp/ HTTP/1.1" 500 96649
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 302 0
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 2083
+Watching for file changes with StatReloader
+"POST /request-password-otp/ HTTP/1.1" 302 0
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 2083
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/users/recover-password/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/storage/emulated/0/PythonScripts/My-django-app/users/views.py", line 145, in recover_password
+    return render(request, "recover_password.html")
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'template-resend-password-otp' not found. 'template-resend-password-otp' is not a valid view function or pattern name.
+"GET /api/v1/users/recover-password/ HTTP/1.1" 500 126909
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 9133
+Watching for file changes with StatReloader
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 2695
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 2695
+"POST /request-password-otp/ HTTP/1.1" 302 0
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 3485
+"POST /request-password-otp/ HTTP/1.1" 302 0
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 3485
+Watching for file changes with StatReloader
+"GET /request-password-otp/ HTTP/1.1" 200 1436
+"POST /request-password-otp/ HTTP/1.1" 302 0
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 3485
+Watching for file changes with StatReloader
+"GET /request-password-otp/ HTTP/1.1" 200 1436
+"POST /request-password-otp/ HTTP/1.1" 302 0
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 5224
+"GET /request-password-otp/ HTTP/1.1" 200 1436
+Watching for file changes with StatReloader
+"GET /request-password-otp/ HTTP/1.1" 200 1436
+"POST /request-password-otp/ HTTP/1.1" 302 0
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 6569
+"POST /api/v1/users/recover-password/ HTTP/1.1" 302 0
+"GET /api/v1/users/login-page/ HTTP/1.1" 200 1858
+Watching for file changes with StatReloader
+"POST /api/v1/users/login-page/ HTTP/1.1" 200 2134
+"POST /api/v1/users/login-page/ HTTP/1.1" 200 2134
+Watching for file changes with StatReloader
+Forbidden (CSRF token missing.): /api/v1/users/login-page/
+"POST /api/v1/users/login-page/ HTTP/1.1" 403 2491
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 9423
+Forbidden (CSRF token missing.): /api/v1/users/login-page/
+"POST /api/v1/users/login-page/ HTTP/1.1" 403 2491
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden (CSRF token missing.): /api/v1/users/login-page/
+"POST /api/v1/users/login-page/ HTTP/1.1" 403 2491
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 9651
+Forbidden (CSRF token missing.): /api/v1/users/login-page/
+"POST /api/v1/users/login-page/ HTTP/1.1" 403 2491
+Forbidden (CSRF token missing.): /api/v1/users/login-page/
+"POST /api/v1/users/login-page/ HTTP/1.1" 403 2491
+Watching for file changes with StatReloader
+Forbidden (CSRF token missing.): /api/v1/users/login-page/
+"POST /api/v1/users/login-page/ HTTP/1.1" 403 2491
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 8376
+"GET /api/v1/users/recover-password/ HTTP/1.1" 200 8376
+"GET /request-password-otp/ HTTP/1.1" 200 1594
+"POST /request-password-otp/ HTTP/1.1" 200 1743
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 42
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 9906
+Internal Server Error: /login-page/
+Traceback (most recent call last):
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /login-page/ HTTP/1.1" 500 121881
+Watching for file changes with StatReloader
+Not Found: /webhook/monnify/
+"GET /webhook/monnify/ HTTP/1.1" 404 10493
+/storage/emulated/0/PythonScripts/My-django-app/config/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/storage/emulated/0/PythonScripts/My-django-app/config/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Method Not Allowed: /webhook/monnify/
+"GET /webhook/monnify/ HTTP/1.1" 405 28
+Watching for file changes with StatReloader

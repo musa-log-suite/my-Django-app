@@ -1,0 +1,200 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard" style="padding: 20px;">
+  <h1 style="margin-bottom: 30px;">📊 Platform Dashboard</h1>
+
+  <!-- 🔎 Filter Form -->
+  <form method="get" style="margin-bottom: 30px;">
+    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+      <label for="start">Start Date:</label>
+      <input type="date" name="start" id="start" value="{{ request.GET.start }}">
+
+      <label for="end">End Date:</label>
+      <input type="date" name="end" id="end" value="{{ request.GET.end }}">
+
+      <label for="role">Role:</label>
+      <select name="role" id="role">
+        <option value="">All</option>
+        <option value="agent" {% if request.GET.role == "agent" %}selected{% endif %}>Agent</option>
+        <option value="user" {% if request.GET.role == "user" %}selected{% endif %}>User</option>
+      </select>
+
+      <label for="verified">Verified:</label>
+      <select name="verified" id="verified">
+        <option value="">All</option>
+        <option value="true" {% if request.GET.verified == "true" %}selected{% endif %}>Yes</option>
+        <option value="false" {% if request.GET.verified == "false" %}selected{% endif %}>No</option>
+      </select>
+
+      <button type="submit" class="btn btn-sm btn-primary">Filter</button>
+    </div>
+  </form>
+
+  <!-- 📤 Export Button -->
+  <form method="post" action="{% url 'export_otp_data' %}" style="margin-bottom: 30px;">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-success">Export OTP Data (CSV)</button>
+  </form>
+
+  <!-- 🔢 Metric Cards -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+    <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+      <h3>Total Users</h3>
+      <p style="font-size: 24px; font-weight: bold;">{{ total_users }}</p>
+    </div>
+
+    <div style="background-color: #f0f0f0; padding: 20px; border-radius: 8px;">
+      <h3>Verified Users</h3>
+      <p style="font-size: 24px; font-weight: bold;">{{ verified_users }}</p>
+    </div>
+
+    <div style="background-color: #e9f7ef; padding: 20px; border-radius: 8px;">
+      <h3>Agents</h3>
+      <p style="font-size: 24px; font-weight: bold;">{{ agent_count }}</p>
+    </div>
+
+    <div style="background-color: #fff3cd; padding: 20px; border-radius: 8px;">
+      <h3>Active Users</h3>
+      <p style="font-size: 24px; font-weight: bold;">{{ active_users }}</p>
+    </div>
+
+    <div style="background-color: #cce5ff; padding: 20px; border-radius: 8px;">
+      <h3>OTP Issued</h3>
+      <p style="font-size: 24px; font-weight: bold;">{{ otp_issued }}</p>
+    </div>
+
+    <div style="background-color: #f8d7da; padding: 20px; border-radius: 8px;">
+      <h3>OTP Attempts</h3>
+      <p style="font-size: 24px; font-weight: bold;">{{ otp_attempts }}</p>
+    </div>
+
+    <div style="background-color: #f5c6cb; padding: 20px; border-radius: 8px;">
+      <h3>Suspicious Users</h3>
+      <p style="font-size: 24px; font-weight: bold;">{{ suspicious_users_count }}</p>
+    </div>
+  </div>
+
+  <!-- 📈 User Growth Chart -->
+  <div style="margin-top: 50px;">
+    <h2>📈 User Growth</h2>
+    <canvas id="userGrowthChart" height="200"></canvas>
+    <script>
+      const userGrowthCtx = document.getElementById('userGrowthChart').getContext('2d');
+      const userGrowthChart = new Chart(userGrowthCtx, {
+        type: 'line',
+        data: {
+          labels: [{% for entry in user_growth %}'{{ entry.month|date:"M Y" }}',{% endfor %}],
+          datasets: [{
+            label: 'User Signups',
+            data: [{% for entry in user_growth %}{{ entry.count }},{% endfor %}],
+            borderColor: '#007bff',
+            fill: false,
+            tension: 0.3
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: { beginAtZero: true }
+          }
+        }
+      });
+    </script>
+  </div>
+
+  <!-- 📊 OTP Chart -->
+  <div style="margin-top: 50px;">
+    <h2>🔢 OTP Verification Overview</h2>
+    <canvas id="otpChart" width="400" height="200"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById('otpChart').getContext('2d');
+      const otpChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Used OTPs', 'Unused OTPs', 'Successful Attempts', 'Failed Attempts'],
+          datasets: [{
+            label: 'OTP Activity',
+            data: [{{ used_otps }}, {{ unused_otps }}, {{ success_attempts }}, {{ failed_attempts }}],
+            backgroundColor: ['#28a745', '#ffc107', '#17a2b8', '#dc3545'],
+            borderRadius: 4
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { display: false }
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+  </div>
+
+  <!-- 🕒 Recent OTPs -->
+  <div style="margin-top: 50px;">
+    <h2>🕒 Recent OTPs</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Code</th>
+          <th>Purpose</th>
+          <th>Used</th>
+          <th>Created At</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for otp in recent_otps %}
+        <tr>
+          <td><a href="{% url 'admin:auth_user_change' otp.user.id %}">{{ otp.user.email }}</a></td>
+          <td>{{ otp.code }}</td>
+          <td>{{ otp.purpose }}</td>
+          <td>{{ otp.is_used }}</td>
+          <td>{{ otp.created_at|date:"Y-m-d H:i" }}</td>
+          <td><button class="btn btn-sm btn-info" onclick="showOtpDetails('{{ otp.id }}')">Details</button></td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="6">No recent OTPs found.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      {% if recent_otps.has_previous %}
+        <a href="?page={{ recent_otps.previous_page_number }}">Previous</a>
+      {% endif %}
+      <span>Page {{ recent_otps.number }} of {{ recent_otps.paginator.num_pages }}</span>
+      {% if recent_otps.has_next %}
+        <a href="?page={{ recent_otps.next_page_number }}">Next</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- 🕒 Recent OTP Attempts -->
+  <div style="margin-top: 50px;">
+    <h2>🕒 Recent OTP Attempts</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Code Entered</th>
+          <th>Success</th>
+          <th>Attempt Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for attempt in recent_attempts %}
+        <tr>
+          <td><a href="{% url 'admin:auth_user_change' attempt.user.id %
