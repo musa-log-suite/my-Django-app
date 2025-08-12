@@ -1,8 +1,11 @@
 .env*.pyc
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.pyc
 __pycache__/
 .venv/
 .venv/
 =======
 >>>>>>> b0d8839396eb24377efdbd6307a744193366f730
+=======
+>>>>>>> origin/main
